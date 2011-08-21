@@ -1,0 +1,243 @@
+
+/*Structured layout mainpage*/
+body{
+color:#777;
+background: #fff;
+}
+
+
+#footer{
+border-top:1px solid #D6D6D6;
+}
+
+/*HEAD AREA*/
+
+#top .logo a, #top .logo a:hover{
+background: transparent url(../images/skin2/logo.png) no-repeat left top;
+}
+
+#nav li a{
+border-left:1px solid #D6D6D6;
+color:#aaa;
+}
+
+#nav .current a, #nav li a:hover{
+color:#222;
+}
+
+#top #nav li ul a{
+border:1px solid #D6D6D6;
+border-top:none;
+color:#aaa;
+background: #fff;
+}
+
+#top #nav li ul a:hover{
+background:#eee;
+color:#588bff;
+}
+
+#top #nav li ul {
+border-top:1px solid #D6D6D6;
+}
+
+/*featured*/
+
+#featured{
+background:transparent url(../images/skin2/shadow.jpg) no-repeat scroll 0px 368px;
+}
+
+/*infotext*/
+#infotext{
+background:transparent url(../images/skin2/bg_infotext.png) no-repeat scroll 0px -1px;
+}
+
+#infotext h2{
+background:transparent url(../images/skin2/bg_infotext.png) no-repeat scroll center bottom;
+color:#555555;
+}
+
+#infotext h2 strong{
+color: #588bff;
+}
+
+/*content*/
+
+#sidebar h3{
+border-bottom:1px solid #d6d6d6;
+}
+
+#sidebar .box a{
+background:transparent url(../images/skin2/bullet_blue.png) no-repeat scroll left center;
+border-bottom:1px solid #d6d6d6;
+}
+
+#sidebar .box ul ul a{
+background:transparent url(../images/skin2/bullet_grey.png) no-repeat scroll 10px center;
+}
+#sidebar .box ul ul ul a{
+background:transparent url(../images/skin2/bullet_grey.png) no-repeat scroll 20px center;
+}
+#sidebar .box ul ul ul ula{
+background:transparent url(../images/skin2/bullet_grey.png) no-repeat scroll 30px center;
+}
+#sidebar .box ul ul ul ul ul a{
+background:transparent url(../images/skin2/bullet_grey.png) no-repeat scroll 40px center;
+}
+
+
+/*blog*/
+
+.post_data{
+border:1px solid #d6d6d6;
+border-left:none;
+border-right:none;
+}
+
+.entry .date{
+color:#8D8D8D;
+}
+
+.entry .day{
+border-right:1px solid #cacaca;
+}
+
+
+/*pagination*/
+
+#top .pagination span, #top .pagination a{
+border:1px solid #D6D6D6;
+}
+
+#top .pagination a:hover{
+border:1px solid #588bff;
+}
+
+#top .pagination .current{
+background: #eee;
+border:1px solid #D6D6D6;
+color:#222;
+}
+
+
+
+
+/*footer*/
+#footer{
+color: #777;
+}
+
+#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer a
+{
+color:#588bff;
+}
+
+#footer .box ul{
+border-top:1px solid #D6D6D6;
+} 
+
+#footer .box ul li a{
+color:#777;
+border-bottom:1px solid #D6D6D6;
+background: transparent url(../images/skin2/bullet_grey.png) center left no-repeat;
+}
+
+#footer .box ul li a:hover{
+background: #f4f4f4 url(../images/skin2/bullet_grey.png) center left no-repeat;
+color:#588bff;
+}
+
+#footer .custom_button{
+background: #ddd url(../images/skin2/mail.png) 170px center  no-repeat;
+color: #333;
+}
+
+#footer .custom_button:hover{
+background-color: #ccc;
+}
+
+#footer #s{
+background: #ddd;
+color:#333;
+}
+
+#footer #searchsubmit{
+background: transparent url(../images/skin2/search.png) 2px center  no-repeat;
+border-left:1px solid #fff;
+}
+
+.wrapper #footer .social_bookmarks .rss a{background: transparent url(../images/skin2/rss_16.png) 0 0  no-repeat;}
+.wrapper #footer .social_bookmarks .facebook a{background: transparent url(../images/skin2/facebook_16.png) 0 0  no-repeat;}
+.wrapper #footer .social_bookmarks .twitter a{background: transparent url(../images/skin2/twitter_16.png) 0 0  no-repeat;}
+.wrapper #footer .social_bookmarks .flickr a{background: transparent url(../images/skin2/flickr_16.png) 0 0  no-repeat;}
+
+
+.more-link{
+background:transparent url(../images/skin2/bullet_blue.png) no-repeat scroll right 15px;
+}
+
+input, select, textarea{
+color:#777;
+}
+
+.wrapper a{
+color:#777777;
+border-bottom: 1px solid #588bff;
+}
+
+.wrapper a:hover{
+border-bottom: 1px solid #666;
+color:#588bff;
+}
+
+
+h1,h2,h3,h4,h5,h6, legend{
+color:#222;
+}
+
+
+#top h1 a, #top h2 a, #top h3 a, #top h4 a, #top h5 a, #top h6 a{
+color:#222;
+} 
+
+#top h1 a:hover, #top h2 a:hover, #top h3 a:hover, #top h4 a:hover, #top h5 a:hover, #top h6 a:hover{
+color:#555;
+} 
+
+.lightbox_video, .lightbox_image{
+background:transparent url(../images/skin2/video.png) no-repeat center center;
+}
+
+#top .lightbox_image{
+background:transparent url(../images/skin2/magnify.png) no-repeat center center;
+}
+
+/*comments*/
+.gravatar img{
+border:1px solid #D6D6D6;
+}
+
+
+/*CONTACT FORM*/	
+
+.text_input, .text_area{
+border:1px solid #D6D6D6;
+}
+
+#send, #submit{
+border:1px solid #D6D6D6;
+background: #222;
+color: #fff;
+}
+
+
+#submit:hover, #send:hover{
+background: #eee;
+color: #222;
+}
+
+
+	
+.valid .text_input, .valid .text_area{border:1px solid #70A41B;} /*#70A41B*/
+.error .text_input, .error .text_area{border:1px solid #ffb628;}
+.ajax_alert .text_input, .ajax_alert .text_area{border:1px solid #ff0000;}

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Display</title>
+    <link rel="stylesheet" href="@Url.Content("~/Content/style.css")" type="text/css" media="screen" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/style1.css")" type="text/css" media="screen" />
+    <!--
+	<link rel="stylesheet" href="css/style2.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/style3.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/style4.css" type="text/css" media="screen" />
+	-->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/PrettyPhoto/css/prettyPhoto.css")" type="text/css"
+        media="screen" charset="utf-8" />
+    <script type='text/javascript' src="@Url.Content("~/Scripts/jquery.js")"></script>
+    <script src="@Url.Content("~/Scripts/PrettyPhoto/js/jquery.prettyPhoto.js")" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="@Url.Content("~/Slideshow/js/swfobject/swfobject.js")"></script>
+    <script type="text/javascript">
+        var flashvars = {};
+        flashvars.xml = "slideshow/config.xml";
+        flashvars.font = "font.swf";
+        var attributes = {};
+        attributes.wmode = "transparent";
+        attributes.id = "slider";
+        swfobject.embedSWF("slideshow/cu3er.swf", "featured_image", "940", "420", "9", "expressInstall.swf", flashvars, attributes);
+    </script>
+    <script type='text/javascript' src="@Url.Content("~/Scripts/custom.js")"></script>
+    <!--[if IE 6]>
+	<script type='text/javascript' src='../../Scripts/dd_belated_png.js'></script>
+	<script>DD_belatedPNG.fix('.ie6fix');</script>
+	<style>#footer .box ul li a, #sidebar .box ul a {zoom:1;}</style>
+	<![endif]-->
+</head>
+            
+@RenderBody()
+
+</html>
