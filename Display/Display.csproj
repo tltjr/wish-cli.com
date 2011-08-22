@@ -78,6 +78,8 @@
     <Content Include="Content\images\bigpicture3.jpg" />
     <Content Include="Content\images\bigpicture4.jpg" />
     <Content Include="Content\images\bigpicture5.jpg" />
+    <Content Include="Content\images\Capture.PNG" />
+    <Content Include="Content\images\command-history.png" />
     <Content Include="Content\images\medium1.jpg" />
     <Content Include="Content\images\medium10.jpg" />
     <Content Include="Content\images\medium11.jpg" />
@@ -143,6 +145,9 @@
     <Content Include="Content\images\Skin3\shadow.jpg" />
     <Content Include="Content\images\Skin3\twitter_16.png" />
     <Content Include="Content\images\Skin3\video.png" />
+    <Content Include="Content\images\split-pane.PNG" />
+    <Content Include="Content\images\tab-complete.PNG" />
+    <Content Include="Content\images\tabs-panes.PNG" />
     <Content Include="Content\style.css" />
     <Content Include="Content\style1.css" />
     <Content Include="Content\style2.css" />

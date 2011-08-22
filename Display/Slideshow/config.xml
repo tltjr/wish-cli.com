@@ -35,25 +35,25 @@
 	<slides>
 	
         <slide>
-            <url>Content/images/bigpicture1.jpg</url>
+            <url>Content/images/split-pane.PNG</url>
         </slide>
 		<!-- changing transition beetween first & second slide -->
         <transition num="3" slicing="vertical" direction="down" />
         <slide>
-       		<url>Content/images/bigpicture5.jpg</url>
+       		<url>Content/images/tab-complete.PNG</url>
         </slide>		
 		<!-- changing transition beetween second & third slide -->
         <transition num="4" direction="right" shader="flat" />
 		<slide>
-            <url>Content/images/bigpicture3.jpg</url>
+            <url>Content/images/tabs-panes.PNG</url>
         </slide>
         <!-- transitions properties defined in transitions template -->
 		<slide>
-       		<url>Content/images/bigpicture2.jpg</url>
+       		<url>Content/images/command-history.PNG</url>
         </slide>
 		<transition num="6" slicing="vertical" direction="up" shader="flat" delay="0.05" z_multiplier="4" />
         <slide>
-       		<url>Content/images/bigpicture4.jpg</url>
+       		<url>Content/images/Capture.PNG</url>
         </slide>
 				
 	</slides>

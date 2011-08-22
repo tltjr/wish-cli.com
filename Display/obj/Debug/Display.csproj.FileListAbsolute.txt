@@ -5,3 +5,10 @@ T:\src\dotnet\Display\Display\bin\EntityFramework.xml
 T:\src\dotnet\Display\Display\obj\Debug\ResolveAssemblyReference.cache
 T:\src\dotnet\Display\Display\obj\Debug\Display.dll
 T:\src\dotnet\Display\Display\obj\Debug\Display.pdb
+T:\src\dotnet\wish-cli.com\Display\bin\Display.dll
+T:\src\dotnet\wish-cli.com\Display\bin\Display.pdb
+T:\src\dotnet\wish-cli.com\Display\bin\EntityFramework.dll
+T:\src\dotnet\wish-cli.com\Display\bin\EntityFramework.xml
+T:\src\dotnet\wish-cli.com\Display\obj\Debug\ResolveAssemblyReference.cache
+T:\src\dotnet\wish-cli.com\Display\obj\Debug\Display.dll
+T:\src\dotnet\wish-cli.com\Display\obj\Debug\Display.pdb
