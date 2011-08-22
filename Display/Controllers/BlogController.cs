@@ -20,5 +20,10 @@ namespace Display.Controllers
         {
             return View();
         }
+
+        public ActionResult Archive()
+        {
+            return View();
+        }
     }
 }

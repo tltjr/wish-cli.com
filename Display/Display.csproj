@@ -256,6 +256,13 @@
     <Content Include="Views\Portfolio\Index.cshtml" />
     <Content Include="Views\Blog\Single.cshtml" />
     <Content Include="Views\Blog\_Sidebar.cshtml" />
+    <Content Include="Views\Portfolio\Single.cshtml" />
+    <Content Include="Views\Shared\_Latest.cshtml" />
+    <Content Include="Views\Blog\Archive.cshtml" />
+    <Content Include="Views\Blog\_Categories.cshtml" />
+    <Content Include="Views\Shared\_Submenu.cshtml" />
+    <Content Include="Views\Home\Page.cshtml" />
+    <Content Include="Views\Home\PageFull.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

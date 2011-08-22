@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*/Home/Page*@
+
+<body id='subpage'>
+
+<div class='wrapper'>
+
+	<div id="top">
+	
+        @Html.Partial("_Head")
+		
+		<div id="main">
+			<div id='sidebar'>
+                @Html.Partial("_Submenu")
+                @Html.Partial("_Latest")
+			</div><!-- end #sidebar -->
+			
+			<div id="content">
+			
+				<div class='entry'>
+					<h2><a href="@Url.Action("Single", "Blog")">About our small company</a></h2>
+						<p>
+		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in  anim id est laborum.
+						<br/>
+						Allamco laboris nisi ut aliquip ex ea commodo consequat.
+		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in  anim id est laborum.
+						</p>
+						<h3>Our Philosophy</h3>
+						<p>
+		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in  anim id est laborum.
+						<br/>						<img src="../../Content/images/mediumpicture3.jpg" alt="" />
+
+						Allamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>			
+						<p>
+		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in  anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>			
+						<p><img class='alignleft' src="../../Content/images/medium4.jpg" alt="" />Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+						<h3>Our Jobs</h3>
+						<p>
+		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in  anim id est laborum.
+						<br/>
+						Allamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+						<h3>The Team</h3>
+						<p>
+		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in  anim id est laborum.
+						<br/>
+						Allamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>	
+						
+					
+				</div><!--end entry-->
+	
+			</div><!-- end content -->
+			
+		</div><!--end main-->
+		
+	</div><!-- end #top -->
+	
+
+	
+</div><!-- end #wrapper -->
+
+@Html.Partial("_Footer")
+
+</body>

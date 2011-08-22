@@ -20,12 +20,12 @@ namespace Display.Controllers
 
         public ActionResult Page()
         {
-            throw new NotImplementedException();
+            return View();
         }
 
         public ActionResult PageFull()
         {
-            throw new NotImplementedException();
+            return View();
         }
     }
 }
