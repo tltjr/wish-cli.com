@@ -1,0 +1,100 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body id='subpage'>
+    <div class='wrapper'>
+        <div id="top">
+            @Html.Partial("_Head")
+            <div id="main">
+                @Html.Partial("_Sidebar")
+                <div id="content">
+                    <div class='entry blogentry'>
+                        <div class="date">
+                            <span class='day'>08</span> <span class='month'>NOV</span> <span class='year'>2008</span>
+                        </div>
+                        <!-- end date -->
+                        <h2>
+                            <a href="@Url.Action("Single", "Blog")">This is a sample blog post</a></h2>
+                        <div class='post_data'>
+                            <span class='categories'><a href="@Url.Action("Archive", "Portfolio")">Design News</a>, <a href='#'>Public
+                                Interest</a></span> <span class='author'>posted by <a href="@Url.Action("Archive", "Portfolio")">Kriesi</a></span>
+                        </div>
+                        <!--end post data-->
+                        <a href="../../Content/images/bigpicture5.jpg" rel='prettyPhoto'>
+                            <img src="../../Content/images/mediumpicture.jpg" alt="" /></a>
+                        <p>
+                            Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in anim id est laborum.
+                            <br />
+                            Allamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <p>
+                            Aser velit esse cillum dolore eu fugiat nulla pariatur. <a href='#'>Excepteur sint</a>
+                            occaecat cupidatat non proident, sunt in anim id est laborum.
+                        </p>
+                        <p>
+                            Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in anim id est laborum.
+                            <br />
+                            Allamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <p>
+                            Aser velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in anim id est laborum.
+                        </p>
+                        <h3>
+                            Our Jobs</h3>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim
+                            id est laborum. Aehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum.
+                        </p>
+                        <!--end entry-->
+                    </div>
+                    <div class="entry commententry">
+                        <h4 id="comments">
+                            1 Response
+                        </h4>
+                        <ol class="commentlist">
+                            <!--one comment-->
+                            <li id="li-comment-1" class="comment even thread-even depth-1">
+                                <div id="comment-1">
+                                    <div class="gravatar">
+                                        <img width="48" height="48" class="avatar avatar-48 photo" src="../../Content/images/skin1/gravatar.png"
+                                            alt="" />
+                                        <a href="#" class="comment-reply-link" rel="nofollow">Reply</a>
+                                    </div>
+                                    <div class="comment_content">
+                                        <cite class="author_name heading"><a class="url" rel="external nofollow" href="#">Michael</a></cite>
+                                        <span class="says">says:</span>
+                                        <div class="comment-meta commentmetadata">
+                                            <a href="#">October 3, 2009 at 6:40 am</a>
+                                        </div>
+                                        <div class="comment_text">
+                                            <p>
+                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim
+                                                id est laborum. Aehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- end content -->
+            </div>
+            <!--end main-->
+        </div>
+        <!-- end #top -->
+    </div>
+    <!-- end wrapper -->
+@Html.Partial("_Footer")
+</body>
+<script type="text/javascript">
+    $("#blog").addClass("current");
+</script>

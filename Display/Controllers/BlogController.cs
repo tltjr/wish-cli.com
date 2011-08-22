@@ -16,5 +16,9 @@ namespace Display.Controllers
             return View();
         }
 
+        public ActionResult Single()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,30 @@
+﻿<div id='sidebar'>
+    <div class="box box_small">
+        <h3>
+            Blog Categories</h3>
+        <ul>
+            <li><a href="@Url.Action("Index", "Home")">Network News</a></li>
+            <li><a href="@Url.Action("Index", "Blog")">Web Design &amp; Development</a></li>
+            <li><a href="@Url.Action("Single", "Blog")">Adobe Creative Suite 4</a>
+                <ul>
+                    <li><a href="page_fullwidth.html">Dreamweaver CS4</a></li>
+                    <li><a href="page.html">Image Editing</a>
+                        <ul>
+                            <li><a href="page.html">Photoshop CS4</a></li>
+                            <li><a href="page_fullwidth.html">Fireworks CS4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="portfolio.html">Theme and Template Design</a></li>
+            <li><a href="portfolio_single.html">Javascript Libraries</a>
+                <ul>
+                    <li><a href="page.html">jQuery - Write less do more</a></li>
+                    <li><a href="page_fullwidth.html">Mootools - A compact javascript framework</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--end box-->
+    @Html.Partial("_Sidebar")
+</div>

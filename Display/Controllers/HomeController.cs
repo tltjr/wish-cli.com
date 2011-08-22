@@ -17,5 +17,15 @@ namespace Display.Controllers
         {
             return View();
         }
+
+        public ActionResult Page()
+        {
+            throw new NotImplementedException();
+        }
+
+        public ActionResult PageFull()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
