@@ -20,7 +20,7 @@ background: #222;
 /*HEAD AREA*/
 
 #top .logo a, #top .logo a:hover{
-background: transparent url(images/Skin1/logo.png) no-repeat left top;
+background: transparent url(images/Skin1/wish-logo.png) no-repeat center center;
 }
 
 #nav li a{

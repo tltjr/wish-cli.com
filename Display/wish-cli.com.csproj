@@ -80,6 +80,8 @@
     <Content Include="Content\images\bigpicture5.jpg" />
     <Content Include="Content\images\Capture.PNG" />
     <Content Include="Content\images\command-history.png" />
+    <Content Include="Content\images\medium-completion.png" />
+    <Content Include="Content\images\medium-tabs.png" />
     <Content Include="Content\images\medium1.jpg" />
     <Content Include="Content\images\medium10.jpg" />
     <Content Include="Content\images\medium11.jpg" />
@@ -111,6 +113,7 @@
     <Content Include="Content\images\Skin1\shadow.jpg" />
     <Content Include="Content\images\Skin1\twitter_16.png" />
     <Content Include="Content\images\Skin1\video.png" />
+    <Content Include="Content\images\Skin1\wish-logo.png" />
     <Content Include="Content\images\Skin2\bg.png" />
     <Content Include="Content\images\Skin2\bg_infotext.png" />
     <Content Include="Content\images\Skin2\bullet_black.png" />
