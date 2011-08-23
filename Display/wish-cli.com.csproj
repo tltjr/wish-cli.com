@@ -113,6 +113,8 @@
     <Content Include="Content\images\Skin1\shadow.jpg" />
     <Content Include="Content\images\Skin1\twitter_16.png" />
     <Content Include="Content\images\Skin1\video.png" />
+    <Content Include="Content\images\Skin1\wish-logo-rev0.png" />
+    <Content Include="Content\images\Skin1\wish-logo-textonly.png" />
     <Content Include="Content\images\Skin1\wish-logo.png" />
     <Content Include="Content\images\Skin2\bg.png" />
     <Content Include="Content\images\Skin2\bg_infotext.png" />
@@ -150,6 +152,7 @@
     <Content Include="Content\images\Skin3\video.png" />
     <Content Include="Content\images\split-pane.PNG" />
     <Content Include="Content\images\tab-complete.PNG" />
+    <Content Include="Content\images\tabs-panes-cropped.PNG" />
     <Content Include="Content\images\tabs-panes.PNG" />
     <Content Include="Content\style.css" />
     <Content Include="Content\style1.css" />
