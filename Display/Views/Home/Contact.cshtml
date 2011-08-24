@@ -14,7 +14,7 @@
                 <!-- end #sidebar -->
                 <div id="content">
                     <div id="contact-form">
-                        <form>
+                        <form id="contact" action="" method="post">
                         <fieldset>
                             <legend>Contact Us:</legend>
                             <div class="clearfix">
@@ -22,6 +22,7 @@
                                     Name</label>
                                 <div class="input">
                                     <input class="xlarge" id="name" name="name" size="30" type="text" />
+                                    <span class="help-inline">Name is Required</span>
                                 </div>
                             </div>
                             <div class="clearfix">
@@ -29,6 +30,7 @@
                                     Email</label>
                                 <div class="input">
                                     <input class="xlarge" id="email" name="email" size="30" type="text" />
+                                    <span class="help-inline">Email is Required</span>
                                 </div>
                             </div>
                             <div class="clearfix">
@@ -36,6 +38,7 @@
                                     Subject</label>
                                 <div class="input">
                                     <input class="xlarge" id="subject" name="subject" size="30" type="text" />
+                                    <span class="help-inline">Subject is Required</span>
                                 </div>
                             </div>
                             <div class="clearfix">
@@ -43,13 +46,12 @@
                                     Message</label>
                                 <div class="input">
                                     <textarea class="xxlarge" id="message" name="message" rows="10" cols="65"></textarea>
+                                    <span class="help-inline stubborn">Message is Required</span>
                                 </div>
                             </div>
                             <div class="actions">
-                                <button type="submit" class="btn primary">
-                                    Submit</button>
-                                <button type="reset" class="btn">
-                                    Cancel</button>
+                                <input type="submit" class="btn primary" id="contact-submit" value="Submit" />
+                                <input type="reset" class="btn" id="cancel" value="Cancel" />
                             </div>
                         </fieldset>
                         </form>
@@ -60,3 +62,4 @@
     </div> <!-- end #wrapper -->
     @Html.Partial("_Footer")
 </body>
+<script src="@Url.Content("~/Scripts/contact.js")" type="text/javascript"></script>

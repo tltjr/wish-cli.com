@@ -929,6 +929,7 @@ form fieldset legend {
 }
 form .clearfix {
   margin-bottom: 18px;
+  margin-top: 18px;
 }
 form ::-webkit-input-placeholder {
   color: #bfbfbf;
@@ -943,6 +944,23 @@ form div.error {
 }
 form div.error > label, form div.error span.help-inline, form div.error span.help-block {
   color: #9d261d;
+}
+form div.error input[type=text], form div.error input[type=password], form div.error textarea {
+  border-color: #c87872;
+  -webkit-box-shadow: 0 0 3px rgba(171, 41, 32, 0.25);
+  -moz-box-shadow: 0 0 3px rgba(171, 41, 32, 0.25);
+  box-shadow: 0 0 3px rgba(171, 41, 32, 0.25);
+}
+form div.error input[type=text]:focus, form div.error input[type=password]:focus, form div.error textarea:focus {
+  border-color: #b9554d;
+  -webkit-box-shadow: 0 0 6px rgba(171, 41, 32, 0.5);
+  -moz-box-shadow: 0 0 6px rgba(171, 41, 32, 0.5);
+  box-shadow: 0 0 6px rgba(171, 41, 32, 0.5);
+}
+form div.error .input-prepend span.add-on, form div.error .input-append span.add-on {
+  background: #f4c8c5;
+  border-color: #c87872;
+  color: #b9554d;
 }
 form textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1132,4 +1150,11 @@ form input[readonly]:focus, form textarea[readonly]:focus, form input.disabled {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+
+form label.error {
+    width: 0;
+}
+.stubborn {
+    margin: 143px;
 }

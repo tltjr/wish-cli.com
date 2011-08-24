@@ -1,0 +1,33 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Shared/f:_Layout.cshtml" caret="1043" fromTop="14" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="3974" fromTop="35" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="548" fromTop="16" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Shared/f:_Layout.cshtml" caret="1044" fromTop="14" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="3160" fromTop="34" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="3664" fromTop="25" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="3662" fromTop="36" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="3974" fromTop="35" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.10\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

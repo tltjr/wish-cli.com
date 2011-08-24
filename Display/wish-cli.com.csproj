@@ -186,6 +186,7 @@
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\contact.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\dd_belated_png.js" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
