@@ -1,0 +1,62 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*/Home/Contact*@
+<body id='subpage'>
+    <div class='wrapper'>
+        <div id="top">
+            @Html.Partial("_Head")
+            <div id="main">
+                <div id='sidebar'>
+                    @Html.Partial("_Submenu")
+                    @Html.Partial("_Latest")
+                </div>
+                <!-- end #sidebar -->
+                <div id="content">
+                    <div id="contact-form">
+                        <form>
+                        <fieldset>
+                            <legend>Contact Us:</legend>
+                            <div class="clearfix">
+                                <label for="name">
+                                    Name</label>
+                                <div class="input">
+                                    <input class="xlarge" id="name" name="name" size="30" type="text" />
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <label for="email">
+                                    Email</label>
+                                <div class="input">
+                                    <input class="xlarge" id="email" name="email" size="30" type="text" />
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <label for="subject">
+                                    Subject</label>
+                                <div class="input">
+                                    <input class="xlarge" id="subject" name="subject" size="30" type="text" />
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <label for="textarea">
+                                    Message</label>
+                                <div class="input">
+                                    <textarea class="xxlarge" id="message" name="message" rows="10" cols="65"></textarea>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <button type="submit" class="btn primary">
+                                    Submit</button>
+                                <button type="reset" class="btn">
+                                    Cancel</button>
+                            </div>
+                        </fieldset>
+                        </form>
+                    </div> <!-- end contact-form -->
+                </div> <!-- end content -->
+            </div> <!--end main-->
+        </div> <!-- end #top -->
+    </div> <!-- end #wrapper -->
+    @Html.Partial("_Footer")
+</body>

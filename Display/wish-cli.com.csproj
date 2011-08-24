@@ -219,7 +219,9 @@
     <Content Include="Scripts\PrettyPhoto\images\PrettyPhoto\light_square\loader.gif" />
     <Content Include="Scripts\PrettyPhoto\images\PrettyPhoto\light_square\sprite.png" />
     <Content Include="Scripts\PrettyPhoto\js\jquery.prettyPhoto.js" />
-    <Content Include="Slideshow\config.xml" />
+    <Content Include="Slideshow\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Slideshow\cu3er.swf" />
     <Content Include="Slideshow\js\swfobject\expressInstall.swf" />
     <Content Include="Slideshow\js\swfobject\swfobject.js" />
@@ -274,6 +276,7 @@
     <Content Include="Views\Shared\_Submenu.cshtml" />
     <Content Include="Views\Home\Page.cshtml" />
     <Content Include="Views\Home\PageFull.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
