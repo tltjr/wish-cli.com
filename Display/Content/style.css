@@ -1158,3 +1158,36 @@ form label.error {
 .stubborn {
     margin: 143px;
 }
+
+/* New Request Invite area */
+#infotext > form label {
+  padding-top: 6px;
+  font-size: 13px;
+  line-height: 18px;
+  float: left;
+  width: 75px;
+  text-align: left;
+  color: #404040;
+}
+#infotext > form label.error 
+{
+    width: 0;
+}
+#infotext > form div.input {
+    margin-left: 75px;
+}
+#regdiv {
+    height: 35px;
+    position: relative;
+}
+.input {
+    position: absolute;
+}
+#register 
+{
+    width: 350px;
+}
+#regbutton {
+    position: absolute;
+    margin-left: 575px;
+}
