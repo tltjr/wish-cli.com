@@ -1,0 +1,15 @@
+﻿@model System.Collections.Generic.IEnumerable<string>
+
+<div class='post_data'>
+    @if (Model != null)
+    {
+        <span class='categories'>
+        @foreach (var tag in Model)
+        {
+            @Html.ActionLink(tag, "Tag", new { tag })
+            @Html.Raw(" ")
+        }
+        </span>
+    }
+    <span class='author'>posted by Thomas</span>
+</div> <!--end post data-->

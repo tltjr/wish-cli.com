@@ -1169,8 +1169,7 @@ form label.error {
   text-align: left;
   color: #404040;
 }
-#infotext > form label.error 
-{
+#infotext > form label.error {
     width: 0;
 }
 #infotext > form div.input {
