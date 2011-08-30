@@ -8,7 +8,7 @@
         </div>
         <!-- end date -->
         <h2>
-            <a href="@Url.Action("Single", "Blog")">@post.Title</a></h2>
+            @Html.ActionLink(@post.Title, @post.Url)</h2>
             @Html.Partial("_Tags", post.Tags)
             @{
                    var summary = @post.Summary;
@@ -21,36 +21,5 @@
                        @Html.ActionLink("Read More..", @post.Url)
                    }
             }
-            @*<a class="more-link" href="@Url.Action("Single", "Blog")">Read more</a>*@
-        @*</p>*@
     </div><!--end entry-->
 }
-@*<div class='entry blogentry'>
-    <div class="date">
-        <span class='day'>08</span> <span class='month'>NOV</span> <span class='year'>2008</span>
-    </div>
-    <!-- end date -->
-    <h2>
-        <a href="@Url.Action("Single", "Blog")">This is a sample blog post with long heading</a></h2>
-    <div class='post_data'>
-        <span class='categories'><a href="@Url.Action("Archive", "Blog")">Design News</a>, <a
-            href='#'>Public Interest</a></span> <span class='author'>posted by <a href="@Url.Action("Archive", "Blog")">
-                Kriesi</a></span>
-    </div>
-    <!--end post data-->
-    <a href="../../Content/images/bigpicture5.jpg" rel='prettyPhoto'>
-        <img src="../../Content/images/mediumpicture.jpg" alt="" /></a>
-    <p>
-        Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-        sunt in anim id est laborum.
-        <br />
-        Allamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <p>
-        Aser velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in anim id est laborum.<a class="more-link" href="@Url.Action("Single", "Blog")">Read
-            more</a>
-    </p>
-    <!--end entry-->
-</div>*@

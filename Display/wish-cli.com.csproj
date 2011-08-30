@@ -45,6 +45,7 @@
       <HintPath>..\packages\mongocsharpdriver.1.1\lib\net35\MongoDB.Driver.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -80,6 +81,8 @@
     <Compile Include="Data\IBasicPersistenceProvider.cs" />
     <Compile Include="Data\PostRepository.cs" />
     <Compile Include="Data\UserRepository.cs" />
+    <Compile Include="Feed\RssActionResult.cs" />
+    <Compile Include="Feed\RssHelper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -297,6 +300,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Blog\_Summaries.cshtml" />
     <Content Include="Views\Blog\_Tags.cshtml" />
+    <Content Include="Views\Blog\Registered.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

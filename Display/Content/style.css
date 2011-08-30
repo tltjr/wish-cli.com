@@ -1190,3 +1190,45 @@ form label.error {
     position: absolute;
     margin-left: 575px;
 }
+
+/* Slider */
+
+#container
+{
+    bottom: 0px;
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#inner
+{
+    color: black;
+    background: #DFF1DF;
+    border: 3px solid #BBE2BB;
+    border-bottom-width: 0px;
+    padding: 20px 20px 75px 20px;
+}
+
+.close 
+{
+    float: right;
+    margin-top: -2px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    filter: alpha(opacity=50);
+    -khtml-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    color: #404040;
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}

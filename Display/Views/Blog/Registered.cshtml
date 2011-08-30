@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Display.Models.Post>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*/Blog/Registered*@
+<body id='subpage'>
+    <div id="container">
+        <div id="inner">
+            <a class="close" href="#">x</a>
+            <p>
+                <strong>Thanks for registering!</strong><br/>
+                We'll be in touch soon. In the meantime, please check out our blog, videos and screenshots!
+            </p>
+        </div>
+    </div>
+    <div class='wrapper'>
+        <div id="top">
+            @Html.Partial("_Head")
+            <div id="main">
+                @Html.Partial("_Sidebar")
+                <div id="content">
+                    @Html.Partial("_Summaries", Model)
+                    <div class="pagination">
+                        <span class="current">1</span> <a class="inactive" href="#">2</a> <a class="inactive"
+                            href="#">3</a> <a class="inactive" href="#">4</a> <a class="inactive" href="#">5</a>
+                    </div>
+                </div> <!-- end content -->
+            </div> <!--end main-->
+        </div> <!-- end #top -->
+    </div><!-- end #wrapper -->
+@Html.Partial("_Footer")
+</body>
+<script type="text/javascript">
+    $('.close').click(function (e) {
+        e.preventDefault();
+        $('#container').hide();
+    });
+</script>
+<script type="text/javascript">
+    $("#blog").addClass("current");
+</script>
+<script type="text/javascript">
+jQuery(function ($) {
+    $("#container").slideDown(2000);
+}
+);
+$(document).click(function () {
+    $('#container').hide();
+});
+$('#container').click(function () {
+    return false;
+});
+</script>
+<!--
+    var container = $("#container");
+    if (container.is(":visible")) {
+        container.slideUp(2000);
+    } else {-->

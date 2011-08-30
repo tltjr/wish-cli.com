@@ -22,6 +22,21 @@ namespace Display
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "RSS",
+                "rss",
+                new {controller = "Blog", action = "Rss"});
+
+            routes.MapRoute(
+                "Feed",
+                "Feed",
+                new {controller = "Blog", action = "Rss"});
+
+            routes.MapRoute(
+                "Post",
+                "Blog/{year}/{month}/{slug}",
+                new {controller = "Blog", action = "Post" });
+
+            routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
