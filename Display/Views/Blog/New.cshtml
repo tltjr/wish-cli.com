@@ -1,0 +1,30 @@
+﻿@model Display.Models.Post
+
+<h2>New Post</h2>
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <div>
+            @Html.LabelFor(model => model.Title)
+        </div>
+        <div>
+            @Html.TextBoxFor(model => model.Title, new {size = 75})
+        </div>
+        <div>
+            <label>Tags (comma seperated)</label>
+        </div>
+        <div>
+            @Html.TextBoxFor(model => model.TagsRaw, new {size = 75})
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Body)
+        </div>
+        <div>
+            @Html.TextAreaFor(model => model.Body, new {rows = 20, cols = 100})
+        </div>
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}

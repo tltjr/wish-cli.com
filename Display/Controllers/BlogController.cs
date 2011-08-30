@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.ServiceModel.Syndication;
-using System.Web;
 using System.Web.Mvc;
 using Display.Data;
 using Display.Feed;
@@ -21,13 +20,11 @@ namespace Display.Controllers
         {
             var posts = _postRepository.FindAll().ToList();
             posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
-            var ten = posts.Take(10);
-            return View(ten);
+            return View(posts.Take(10));
         }
 
         public ActionResult Registered()
         {
-            ViewBag.Title = ConfigurationManager.AppSettings["title"];
             var posts = _postRepository.FindAll().ToList();
             posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
             return View(posts.Take(10));
@@ -47,22 +44,33 @@ namespace Display.Controllers
             if(post.TagsRaw != null)
             {
                 var split = post.TagsRaw.Split(',');
-                post.Tags = split.Select(o => o.Trim()).ToList();
+                var trimmed = split.Select(o => o.Trim());
+                post.Tags = UppercaseFirst(trimmed).ToList();
             }
             _postRepository.Store(post);
-            return RedirectToAction("Post", new { slug = post.Slug });
+            return RedirectToAction("Single", new { slug = post.Slug });
         }
 
-        public ActionResult Post(string slug)
+        private static IEnumerable<string> UppercaseFirst(IEnumerable<string> strings)
         {
-            ViewBag.Title = ConfigurationManager.AppSettings["title"];
+            foreach (var str in strings)
+            {
+            	if (string.IsNullOrEmpty(str))
+            	{
+            	    yield return string.Empty;
+            	}
+            	yield return char.ToUpper(str[0]) + str.Substring(1).ToLower();
+            }
+        }
+
+        public ActionResult Single(string slug)
+        {
             var post = _postRepository.FindOneByKey("Slug", slug);
             return View(post);
         }
 
         public ActionResult Tag(string tag)
         {
-            ViewBag.Title = ConfigurationManager.AppSettings["title"];
             var tagged = new Tagged {Posts = _postRepository.FindAllByKey("Tags", tag), Tag = tag};
             return View(tagged);
         }

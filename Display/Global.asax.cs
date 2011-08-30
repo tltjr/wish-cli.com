@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Display.Data;
 
 namespace Display
 {
@@ -34,7 +36,7 @@ namespace Display
             routes.MapRoute(
                 "Post",
                 "Blog/{year}/{month}/{slug}",
-                new {controller = "Blog", action = "Post" });
+                new {controller = "Blog", action = "Single" });
 
             routes.MapRoute(
                 "Default", // Route name
@@ -50,6 +52,18 @@ namespace Display
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+            RegisterUser();
+            //RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
         }
+
+        private static void RegisterUser()
+        {
+            var repo = new UserRepository();
+            var user = repo.GetUser("tltjr");
+            if (null != user) return;
+            var password = ConfigurationManager.AppSettings["password"];
+            repo.CreateUser("tltjr", password, "");
+        }
+
     }
 }

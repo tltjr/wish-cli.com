@@ -301,6 +301,9 @@
     <Content Include="Views\Blog\_Summaries.cshtml" />
     <Content Include="Views\Blog\_Tags.cshtml" />
     <Content Include="Views\Blog\Registered.cshtml" />
+    <Content Include="Views\Blog\New.cshtml" />
+    <Content Include="Views\Blog\Tag.cshtml" />
+    <Content Include="Views\Blog\Edit.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

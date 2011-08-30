@@ -1,0 +1,20 @@
+﻿@model Display.Models.Post
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body id='subpage'>
+    <div class='wrapper'>
+        <h2>
+            Edit Post</h2>
+        @using (Html.BeginForm())
+        {
+            <div class="monospace">@Html.EditorFor(x => x.Title)</div>
+            <div class="monospace">@Html.EditorFor(x => x.TagsRaw)</div>
+            <div class="monospace">@Html.EditorFor(x => x.Body)</div>
+
+            <input type="submit" value="Submit" /> 
+                              var id = Model.Id;
+            @Html.ActionLink("Delete", "Delete", "Blog", new { id }, null);
+        }
+    </div>
+</body>

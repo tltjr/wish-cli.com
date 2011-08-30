@@ -9,44 +9,65 @@
   <RecentFiles>
     <RecentFiles>
       <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Scripts/f:jquery.validate.js" caret="0" fromTop="0" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Shared/f:_Layout.cshtml" caret="1132" fromTop="14" />
       <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Scripts/f:contact.js" caret="858" fromTop="23" />
       <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="3262" fromTop="43" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="19722" fromTop="27" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Index.cshtml" caret="1389" fromTop="32" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/f:Web.config" caret="2796" fromTop="44" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Data/f:Bcrypt.cs" caret="0" fromTop="0" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Models/f:EmailModel.cs" caret="0" fromTop="0" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Models/f:Tagged.cs" caret="57" fromTop="2" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Data/f:UserRepository.cs" caret="2006" fromTop="29" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Data/f:IBasicPersistenceProvider.cs" caret="76" fromTop="3" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Data/f:EmailRepository.cs" caret="1429" fromTop="35" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Data/f:EditId.cs" caret="37" fromTop="2" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/f:Web.config" caret="653" fromTop="0" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:App_Data/f:MongoMembershipProvider.cs" caret="860" fromTop="19" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Data/f:ConnectionHelper.cs" caret="306" fromTop="12" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Controllers/f:HomeController.cs" caret="652" fromTop="34" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:_Tags.cshtml" caret="306" fromTop="11" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Data/f:PostRepository.cs" caret="1202" fromTop="30" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Models/f:Post.cs" caret="946" fromTop="39" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:_Summaries.cshtml" caret="391" fromTop="11" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Feed/f:RssHelper.cs" caret="508" fromTop="16" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Feed/f:RssActionResult.cs" caret="101" fromTop="4" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/f:Global.asax.cs" caret="895" fromTop="31" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Controllers/f:BlogController.cs" caret="2894" fromTop="70" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Scripts/f:custom.js" caret="705" fromTop="25" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Index.cshtml" caret="802" fromTop="21" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Shared/f:_Layout.cshtml" caret="1139" fromTop="15" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Registered.cshtml" caret="1274" fromTop="34" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="20282" fromTop="104" />
     </RecentFiles>
     <RecentEdits>
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="3295" fromTop="38" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Shared/f:_Layout.cshtml" caret="1133" fromTop="14" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="12573" fromTop="53" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="1037" fromTop="12" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="1997" fromTop="28" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="1506" fromTop="20" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="2860" fromTop="41" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="3295" fromTop="38" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="12919" fromTop="51" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="2500" fromTop="18" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="3295" fromTop="53" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="3295" fromTop="54" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="3295" fromTop="49" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Scripts/f:contact.js" caret="858" fromTop="24" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Scripts/f:contact.js" caret="0" fromTop="0" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Contact.cshtml" caret="3295" fromTop="32" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Index.cshtml" caret="4378" fromTop="42" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="19538" fromTop="30" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Index.cshtml" caret="1605" fromTop="22" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Index.cshtml" caret="958" fromTop="14" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="19995" fromTop="40" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Index.cshtml" caret="1605" fromTop="33" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Home/f:Index.cshtml" caret="1557" fromTop="34" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="19992" fromTop="43" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="19808" fromTop="28" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="19997" fromTop="44" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="19424" fromTop="9" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="19690" fromTop="26" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/f:Web.config" caret="2178" fromTop="24" />
-      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/f:Web.config" caret="1491" fromTop="23" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Models/f:Post.cs" caret="1919" fromTop="55" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Models/f:Post.cs" caret="690" fromTop="29" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Models/f:Post.cs" caret="929" fromTop="38" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:_Summaries.cshtml" caret="828" fromTop="23" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:_Summaries.cshtml" caret="828" fromTop="18" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:_Summaries.cshtml" caret="722" fromTop="19" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:_Summaries.cshtml" caret="857" fromTop="24" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:_Summaries.cshtml" caret="379" fromTop="11" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/f:Global.asax.cs" caret="1111" fromTop="27" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/f:Global.asax.cs" caret="660" fromTop="22" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Controllers/f:BlogController.cs" caret="3896" fromTop="20" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Controllers/f:BlogController.cs" caret="766" fromTop="22" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Controllers/f:BlogController.cs" caret="437" fromTop="0" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Feed/f:RssActionResult.cs" caret="101" fromTop="4" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Feed/f:RssHelper.cs" caret="152" fromTop="6" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Controllers/f:BlogController.cs" caret="3884" fromTop="45" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Registered.cshtml" caret="0" fromTop="0" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Index.cshtml" caret="168" fromTop="7" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Registered.cshtml" caret="472" fromTop="25" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Registered.cshtml" caret="103" fromTop="5" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Registered.cshtml" caret="472" fromTop="42" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Registered.cshtml" caret="472" fromTop="42" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="20015" fromTop="26" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Registered.cshtml" caret="472" fromTop="16" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Registered.cshtml" caret="1038" fromTop="27" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Shared/f:_Layout.cshtml" caret="1135" fromTop="15" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Registered.cshtml" caret="1683" fromTop="52" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Registered.cshtml" caret="1809" fromTop="56" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Views/d:Blog/f:Registered.cshtml" caret="1499" fromTop="41" />
+      <File id="FEC4B415-58AD-4B86-B1BB-622B9713FB52/d:Content/f:style.css" caret="20123" fromTop="32" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -59,4 +80,41 @@
     <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.10\bin\net-2.0\</NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="0" />
+      <Item value="string" priority="0" />
+      <Item value="return" priority="2" />
+      <Item value="CreatedAt" priority="0" />
+      <Item value="var" priority="1" />
+      <Item value="private" priority="1" />
+      <Item value="readonly" priority="0" />
+      <Item value="new" priority="0" />
+      <Item value="PostRepository" priority="0" />
+      <Item value="posts" priority="2" />
+      <Item value="x" priority="0" />
+      <Item value="const" priority="0" />
+      <Item value="int" priority="0" />
+      <Item value="SummaryLength" priority="1" />
+      <Item value="if" priority="0" />
+      <Item value="day" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="Year" priority="0" />
+      <Item value="CompareTo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Sort`0" priority="0" />
+      <Item value="Take`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Display.Models.Post">
+      <Item value="CreatedAt" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>
