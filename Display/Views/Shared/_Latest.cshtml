@@ -1,10 +1,13 @@
-﻿<div class="box box_small">
+﻿@model IEnumerable<Display.Models.Post>
+           
+<div class="box box_small">
     <h3>
         Latest News</h3>
     <ul>
-        <li><a href="@Url.Action("Single", "Blog")">Our New Page is online</a></li>
-        <li><a href="@Url.Action("Single", "Blog")">Flash Slider Released</a></li>
-        <li><a href="@Url.Action("Single", "Blog")">Apple buys Microsoft</a></li>
-        <li><a href="@Url.Action("Single", "Blog")">Adobe buys Macromedia</a></li>
+        @foreach (var post in Model)
+        {
+            @*<li>@Html.ActionLink(post.Title, post.Url)</li>*@
+            @Ajax.ActionLink(post.Title, "Entry", new AjaxOptions { UpdateTargetId = "content" });
+        }
     </ul>
 </div>

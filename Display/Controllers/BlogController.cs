@@ -69,6 +69,12 @@ namespace Display.Controllers
             return View(post);
         }
 
+        public PartialViewResult Entry(string slug)
+        {
+            var post = _postRepository.FindOneByKey("Slug", slug);
+            return PartialView("_Entry", post);
+        }
+
         public ActionResult Tag(string tag)
         {
             var tagged = new Tagged {Posts = _postRepository.FindAllByKey("Tags", tag), Tag = tag};

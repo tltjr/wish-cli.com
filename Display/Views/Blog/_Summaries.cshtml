@@ -5,8 +5,7 @@
     <div class='entry blogentry'>
         <div class="date">
             <span class='day'>@post.Day</span> <span class='month'>@post.Month</span> <span class='year'>@post.Year</span>
-        </div>
-        <!-- end date -->
+        </div> <!-- end date -->
         <h2>
             @Html.ActionLink(@post.Title, @post.Url)</h2>
             @Html.Partial("_Tags", post.Tags)

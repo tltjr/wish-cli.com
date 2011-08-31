@@ -1,0 +1,14 @@
+﻿@model Display.Models.Post
+<div class='entry blogentry'>
+    <div class="date">
+        <span class='day'>@Model.Day</span> <span class='month'>@Model.Month</span> <span class='year'>@Model.Year</span>
+    </div> <!-- end date -->
+    <h2>
+        @Html.ActionLink(Model.Title, Model.Url)</h2>
+    @Html.Partial("_Tags", Model.Tags)
+    @{
+        var body = Model.Body;
+        var bodyHtml = body.Replace("\r\n", "<br />");
+        @Html.Raw(bodyHtml)
+    }
+</div> <!--end entry-->
