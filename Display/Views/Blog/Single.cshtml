@@ -1,4 +1,4 @@
-﻿@model Display.Models.Post
+﻿@model Display.Models.SinglePostModel
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -7,13 +7,13 @@
         <div id="top">
             @Html.Partial("_Head")
             <div id="main">
-                @Html.Partial("_Sidebar")
+                @Html.Partial("_Sidebar", Model.Sidebar)
                 <div id="content">
-                    @Html.Partial("_Entry")
+                    @Html.Partial("_Entry", Model.Post)
                     @if (User.Identity.IsAuthenticated)
                     {
                         <div class="edit">
-                            @Html.ActionLink("Edit", "Edit", new { objectId = Model.Id}, null)
+                            @Html.ActionLink("Edit", "Edit", new { objectId = Model.Post.Id}, null)
                         </div>
                     }
                 </div> <!-- end content -->

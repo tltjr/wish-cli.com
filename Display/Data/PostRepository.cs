@@ -60,5 +60,22 @@ namespace Display.Data
             var query = Query.EQ("_id", new BsonObjectId(objectId));
             return _collection.FindOne(query);
         }
+
+        public IEnumerable<string> FindTags()
+        {
+            var result = new List<string>();
+            foreach (var post in _collection.FindAll())
+            {
+                var tags = post.Tags;
+                foreach (var tag in tags)
+                {
+                    if(!result.Contains(tag))
+                    {
+                        result.Add(tag);
+                    }
+                }
+            }
+            return result;
+        }
     }
 }

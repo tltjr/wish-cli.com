@@ -14,6 +14,7 @@
     <AssemblyName>Display</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -87,9 +88,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\BlogModel.cs" />
     <Compile Include="Models\EmailModel.cs" />
     <Compile Include="Models\Post.cs" />
-    <Compile Include="Models\Tagged.cs" />
+    <Compile Include="Models\SidebarModel.cs" />
+    <Compile Include="Models\SinglePostModel.cs" />
+    <Compile Include="Models\TaggedModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

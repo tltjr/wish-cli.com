@@ -6,8 +6,7 @@
     <ul>
         @foreach (var post in Model)
         {
-            @*<li>@Html.ActionLink(post.Title, post.Url)</li>*@
-            @Ajax.ActionLink(post.Title, "Entry", new AjaxOptions { UpdateTargetId = "content" });
+            <li>@Html.ActionLink(post.Title, post.Url)</li>
         }
     </ul>
 </div>

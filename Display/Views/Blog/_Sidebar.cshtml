@@ -1,8 +1,10 @@
-﻿<div id='sidebar'>
+﻿@model Display.Models.SidebarModel
+           
+<div id='sidebar'>
     <div class="box box_small">
-        @Html.Partial("_Categories")
+        @Html.Partial("_Categories", Model.Categories)
     </div>
-    @Html.Partial("_Latest")
+    @Html.Partial("_Latest", Model.Latest)
     <br />
     @*@Html.ActionLink("Archive", "Archive", "Blog")*@
 </div>

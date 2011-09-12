@@ -1,24 +1,11 @@
-﻿<h3>
+﻿@model IEnumerable<string>
+           
+<h3>
     Blog Categories</h3>
 <ul>
-    <li><a href="@Url.Action("Index", "Home")">Network News</a></li>
-    <li><a href="@Url.Action("Index", "Blog")">Web Design &amp; Development</a></li>
-    <li><a href="@Url.Action("Single", "Blog")">Adobe Creative Suite 4</a>
-        <ul>
-            <li><a href="@Url.Action("PageFull", "Home")">Dreamweaver CS4</a></li>
-            <li><a href="@Url.Action("Page", "Home")">Image Editing</a>
-                <ul>
-                    <li><a href="@Url.Action("Page", "Home")">Photoshop CS4</a></li>
-                    <li><a href="@Url.Action("PageFull", "Home")">Fireworks CS4</a></li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li><a href="@Url.Action("Index", "Preview")">Theme and Template Design</a></li>
-    <li><a href="@Url.Action("Single", "Preview")">Javascript Libraries</a>
-        <ul>
-            <li><a href="@Url.Action("Page", "Home")">jQuery - Write less do more</a></li>
-            <li><a href="@Url.Action("PageFull", "Home")">Mootools - A compact javascript framework</a></li>
-        </ul>
-    </li>
+@foreach (var tag in Model)
+{
+    <li>@Html.ActionLink(tag, "Tag", new { tag })</li>
+}
+    
 </ul>

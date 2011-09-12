@@ -20,14 +20,26 @@ namespace Display.Controllers
         {
             var posts = _postRepository.FindAll().ToList();
             posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
-            return View(posts.Take(10));
+            var sidebar = GetSidebarModel();
+            var blogModel = new BlogModel()
+                                {
+                                    Posts = posts.Take(10),
+                                    Sidebar = sidebar
+                                };
+            return View(blogModel);
         }
 
         public ActionResult Registered()
         {
             var posts = _postRepository.FindAll().ToList();
             posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
-            return View(posts.Take(10));
+            var sidebar = GetSidebarModel();
+            var blogModel = new BlogModel()
+                                {
+                                    Posts = posts.Take(10),
+                                    Sidebar = sidebar
+                                };
+            return View(blogModel);
         }
 
         [Authorize]
@@ -66,7 +78,26 @@ namespace Display.Controllers
         public ActionResult Single(string slug)
         {
             var post = _postRepository.FindOneByKey("Slug", slug);
-            return View(post);
+            var sidebar = GetSidebarModel();
+            var singlePostModel = new SinglePostModel()
+                                      {
+                                          Post = post,
+                                          Sidebar = sidebar
+                                      };
+            return View(singlePostModel);
+        }
+
+        private SidebarModel GetSidebarModel()
+        {
+            var posts = _postRepository.FindAll().ToList();
+            posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
+            var latest = posts.Take(5);
+            var categories = _postRepository.FindTags();
+            return new SidebarModel()
+                       {
+                           Categories = categories,
+                           Latest = latest
+                       };
         }
 
         public PartialViewResult Entry(string slug)
@@ -77,7 +108,12 @@ namespace Display.Controllers
 
         public ActionResult Tag(string tag)
         {
-            var tagged = new Tagged {Posts = _postRepository.FindAllByKey("Tags", tag), Tag = tag};
+            var tagged = new TaggedModel
+                             {
+                                 Posts = _postRepository.FindAllByKey("Tags", tag),
+                                 Tag = tag,
+                                 Sidebar = GetSidebarModel()
+                             };
             return View(tagged);
         }
 
