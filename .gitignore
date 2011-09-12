@@ -2,4 +2,10 @@
 _ReSharper*
 
 # ReSharper user settings
-Wish.5.1.ReSharper.user
+*.ReSharper.user
+
+# bin directories
+bin\
+
+# obj directories
+obj\
