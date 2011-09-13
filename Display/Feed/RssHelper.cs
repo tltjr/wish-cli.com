@@ -13,7 +13,7 @@ namespace Display.Feed
             return
                 twenty.Select(
                     post =>
-                    new SyndicationItem(post.Title, post.Body, new Uri(@"http://wish-cli.com/Blog/" + post.Slug)));
+                    new SyndicationItem(post.Title, post.Body, new Uri(@"http://wish-cli.com/" + post.Url), String.Empty, post.CreatedAt));
         }
     }
 }
