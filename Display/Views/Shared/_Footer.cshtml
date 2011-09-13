@@ -4,10 +4,18 @@
             <h4>
                 Latest News</h4>
             <ul>
-                <li><a href="@Url.Action("Single", "Blog")">Our New Page is online</a></li>
-                <li><a href="@Url.Action("Single", "Blog")">Flash Slider Released</a></li>
-                <li><a href="@Url.Action("Single", "Blog")">Apple buys Microsoft</a></li>
-                <li><a href="@Url.Action("Single", "Blog")">Adobe buys Macromedia</a></li>
+                @{
+                    
+                    var postRepository = new Display.Data.PostRepository();
+                    var posts = postRepository.FindAll().ToList();
+                    posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
+                    var latest = posts.Take(5);
+                        
+                    foreach (var post in latest)
+                    {
+                        <li>@Html.ActionLink(post.Title, post.Url)</li>
+                    }
+                }
             </ul>
         </div>
         <div class="box box_mini">
@@ -48,7 +56,8 @@
             </div>
             <ul class="social_bookmarks">
                 <li class='rss'><a class='ie6fix' href="rss">RSS</a></li>
-                <li class='facebook'><a class='ie6fix' href="http://www.facebook.com/pages/Wish/184932501563141">Facebook</a></li>
+                <li class='facebook'><a class='ie6fix' href="http://www.facebook.com/pages/Wish/184932501563141">
+                    Facebook</a></li>
                 <li class='twitter'><a class='ie6fix' href="http://twitter.com/#!/wishcli">Twitter</a></li>
                 <li class='flickr'><a class='ie6fix' href="http://www.flickr.com/photos/wishcli/">flickr</a></li>
             </ul>
