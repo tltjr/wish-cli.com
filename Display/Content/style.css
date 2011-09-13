@@ -504,6 +504,7 @@ outline: none;
 .wrapper #footer .social_bookmarks{
 border:none;
 display: block;
+padding-top: 20px;
 float: left;
 width:100%;
 }
