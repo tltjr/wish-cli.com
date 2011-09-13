@@ -15,28 +15,13 @@
                 Pages</h4>
             <ul>
                 <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("Index", "Blog")">Blog</a></li>
                 <li><a href="@Url.Action("Index", "Preview")">Preview</a></li>
                 <li><a href="@Url.Action("Single", "Preview")">Screenshots</a></li>
                 <li><a href="@Url.Action("Single", "Preview")">Videos</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
             </ul>
         </div>
-@*        <div class="box box_mini">
-            <h4>
-                Template Files</h4>
-            <ul>
-                <li><a href="@Url.Action("Index", "Home")">Index</a></li>
-                <li><a href="index_no3d.html">Index - Fading Slider</a></li>
-                <li><a href="@Url.Action("Index", "Blog")">Blog</a></li>
-                <li><a href="@Url.Action("Single", "Blog")">Single Blog Page</a></li>
-                <li><a href="@Url.Action("Index", "Preview")">Portfolio</a></li>
-                <li><a href="@Url.Action("Single", "Preview")">Single Portfolio Page</a></li>
-                <li><a href="@Url.Action("Page", "Home")">Page</a></li>
-                <li><a href="@Url.Action("PageFull", "Home")">Page Fullwidth</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="@Url.Action("Archive", "Blog")">Archive</a></li>
-            </ul>
-        </div>*@
         <div class="box box_mini">
             <h4>
                 Miscellaneous</h4>
@@ -49,7 +34,7 @@
             </ul>
         </div>
         <div class="box box_custom_footer">
-            <a href='contact.php' class='custom_button ie6fix rounded'><strong>Contact Form</strong><span>get
+            <a href='Home/Contact' class='custom_button ie6fix rounded'><strong>Contact Form</strong><span>get
                 in touch with us</span></a>
             <div id='sitesearch_footer'>
                 <h4>
@@ -61,10 +46,8 @@
                 </div>
                 </form>
             </div>
-            <p>
-                This site uses valid HTML and CSS. All content Copyright &copy; 2010 DISPLAY, Inc</p>
             <ul class="social_bookmarks">
-                <li class='rss'><a class='ie6fix' href="#">RSS</a></li>
+                <li class='rss'><a class='ie6fix' href="rss">RSS</a></li>
                 <li class='facebook'><a class='ie6fix' href="#">Facebook</a></li>
                 <li class='twitter'><a class='ie6fix' href="#">Twitter</a></li>
                 <li class='flickr'><a class='ie6fix' href="#">flickr</a></li>

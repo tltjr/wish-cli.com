@@ -8,6 +8,8 @@ namespace Display.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly SidebarHelper _sidebarHelper = new SidebarHelper();
+
         public ActionResult Index()
         {
             return View();
@@ -30,7 +32,7 @@ namespace Display.Controllers
 
         public ActionResult Contact()
         {
-            return View();
+            return View(_sidebarHelper.GetSidebarModel());
         }
     }
 }

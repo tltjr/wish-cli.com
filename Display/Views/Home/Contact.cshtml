@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Display.Models.SidebarModel
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @*/Home/Contact*@
@@ -9,7 +10,7 @@
             <div id="main">
                 <div id='sidebar'>
                     @Html.Partial("_Submenu")
-                    @Html.Partial("_Latest")
+                    @Html.Partial("_Latest", Model.Latest)
                 </div>
                 <!-- end #sidebar -->
                 <div id="content">
