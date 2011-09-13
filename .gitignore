@@ -5,10 +5,10 @@ _ReSharper*
 *.ReSharper.user
 
 # bin directories
-bin\
+bin
 
 # obj directories
-obj\
+obj
 
 # vim swap files
 *.swp
