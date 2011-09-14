@@ -1,0 +1,2 @@
+large - 940x420
+medium - 280x124

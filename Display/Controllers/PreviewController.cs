@@ -4,16 +4,19 @@ namespace Display.Controllers
 {
     public class PreviewController : Controller
     {
-        private readonly SidebarHelper _sidebarHelper = new SidebarHelper();
-
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Single()
+        public ActionResult Screenshots()
         {
-            return View(_sidebarHelper.GetSidebarModel());
+            return View();
+        }
+
+        public ActionResult Videos()
+        {
+            return View();
         }
     }
 }

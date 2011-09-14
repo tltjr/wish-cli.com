@@ -98,30 +98,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\images\bigpicture1.jpg" />
-    <Content Include="Content\images\bigpicture2.jpg" />
-    <Content Include="Content\images\bigpicture3.jpg" />
-    <Content Include="Content\images\bigpicture4.jpg" />
-    <Content Include="Content\images\bigpicture5.jpg" />
+    <Content Include="Content\images\Capture.jpg" />
     <Content Include="Content\images\Capture.PNG" />
+    <Content Include="Content\images\command-history.jpg" />
     <Content Include="Content\images\command-history.png" />
+    <Content Include="Content\images\medium-Capture.jpg" />
+    <Content Include="Content\images\medium-Capture.PNG" />
+    <Content Include="Content\images\medium-command-history.jpg" />
+    <Content Include="Content\images\medium-command-history.png" />
     <Content Include="Content\images\medium-completion.png" />
+    <Content Include="Content\images\medium-split-pane.PNG" />
+    <Content Include="Content\images\medium-tabs-panes-cropped.PNG" />
     <Content Include="Content\images\medium-tabs.png" />
-    <Content Include="Content\images\medium1.jpg" />
-    <Content Include="Content\images\medium10.jpg" />
-    <Content Include="Content\images\medium11.jpg" />
-    <Content Include="Content\images\medium12.jpg" />
-    <Content Include="Content\images\medium2.jpg" />
-    <Content Include="Content\images\medium3.jpg" />
-    <Content Include="Content\images\medium4.jpg" />
-    <Content Include="Content\images\medium5.jpg" />
-    <Content Include="Content\images\medium6.jpg" />
-    <Content Include="Content\images\medium7.jpg" />
-    <Content Include="Content\images\medium8.jpg" />
-    <Content Include="Content\images\medium9.jpg" />
-    <Content Include="Content\images\mediumpicture.jpg" />
-    <Content Include="Content\images\mediumpicture2.jpg" />
-    <Content Include="Content\images\mediumpicture3.jpg" />
     <Content Include="Content\images\Skin1\bg.png" />
     <Content Include="Content\images\Skin1\bg_infotext.png" />
     <Content Include="Content\images\Skin1\bullet_black.png" />
@@ -175,9 +163,13 @@
     <Content Include="Content\images\Skin3\shadow.jpg" />
     <Content Include="Content\images\Skin3\twitter_16.png" />
     <Content Include="Content\images\Skin3\video.png" />
+    <Content Include="Content\images\split-pane.jpg" />
     <Content Include="Content\images\split-pane.PNG" />
+    <Content Include="Content\images\tab-complete.jpg" />
     <Content Include="Content\images\tab-complete.PNG" />
+    <Content Include="Content\images\tabs-panes-cropped.jpg" />
     <Content Include="Content\images\tabs-panes-cropped.PNG" />
+    <Content Include="Content\images\tabs-panes.jpg" />
     <Content Include="Content\images\tabs-panes.PNG" />
     <Content Include="Content\style.css" />
     <Content Include="Content\style1.css" />
@@ -295,7 +287,6 @@
     <Content Include="Views\Preview\Index.cshtml" />
     <Content Include="Views\Blog\Single.cshtml" />
     <Content Include="Views\Blog\_Sidebar.cshtml" />
-    <Content Include="Views\Preview\Single.cshtml" />
     <Content Include="Views\Shared\_Latest.cshtml" />
     <Content Include="Views\Blog\Archive.cshtml" />
     <Content Include="Views\Blog\_Categories.cshtml" />
@@ -310,6 +301,8 @@
     <Content Include="Views\Blog\Tag.cshtml" />
     <Content Include="Views\Blog\Edit.cshtml" />
     <Content Include="Views\Blog\_Entry.cshtml" />
+    <Content Include="Views\Preview\Screenshots.cshtml" />
+    <Content Include="Views\Preview\Videos.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
