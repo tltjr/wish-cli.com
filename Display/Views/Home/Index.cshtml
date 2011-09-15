@@ -1,9 +1,7 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 @*/Home/Index*@
-
 <body id='frontpage'>
     <div class='wrapper'>
         <div id="top">
@@ -21,24 +19,52 @@
                     Request an invite</h2>
                 <h4>
                     We're still in private beta. Please give us your email to be invited soon.</h4>
-                        <form action="" method="post">
-                        <fieldset>
-                            <div class="clearfix" id="regdiv">
-                                <label for="email">
-                                    Email</label>
-                                <div class="input">
-                                    <input class="xlarge" id="register" name="email" size="30" type="text" />
-                                    <span class="help-inline">Email is Required</span>
-                                </div>
-                                <div id="regbutton">
-                                    <input type="submit" class="btn primary" id="contact-submit" value="Register" />
-                                </div>
-                            </div>
-                        </fieldset>
-                        </form>
-@*                <h2>
+                <form action="" method="post">
+                <fieldset>
+                    <div class="clearfix" id="regdiv">
+                        <label for="email">
+                            Email</label>
+                        <div class="input">
+                            <input class="xlarge" id="register" name="email" size="30" type="text" />
+                            <span class="help-inline">Email is Required</span>
+                        </div>
+                        <div id="regbutton">
+                            <input type="submit" class="btn primary" id="contact-submit" value="Register" />
+                        </div>
+                    </div>
+                </fieldset>
+                </form>
+                @*                <h2>
                     This is <strong>display</strong>, a unique Themeforest template for showcasing
                     your work and perfect for any business in need of a stunning website...</h2>*@
+            </div>
+            <div class="hidden" id="boxes">
+                <div style="top: 199.5px; left: 551.5px; display: none;" id="dialog" class="window">
+                    @*<div id="description" class="coming">*@
+                    <h3 id="header_text">
+                    </h3>
+                    <p id="paragraph_text">
+                    </p>
+                    <p>
+                        To share with your friends:</p>
+                    <div id="sharebuttons">
+                        <div class="tweet_to_action" id="tweet_to_action" onclick="window.open('http://www.wil.lt/willet?ca_id=7e2009c2a6714bda','popup','width=550,height=260,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); button_clicked();">
+                            <div class="title" id="title">
+                                Get 15% Off!!
+                            </div>
+                            <div class="subtitle" id="subtitle">
+                                by sharing your love</div>
+                            <div id="button_bird" class="bird">
+                            </div>
+                        </div>
+                        <div id="exitoptions">
+                            <a id="nothanks" href="">No Thanks. Just register me!</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 1478px; height: 602px; display: none; opacity: 0.8;" id="mask">
+                </div>
+                <!-- <a class="cs_import">Email To Friends</a>-->
             </div>
             <!--end infotext-->
             <div id="main">
@@ -84,9 +110,43 @@
         <!-- end #top -->
     </div>
     <!-- end #wrapper -->
-@Html.Partial("_Footer")
+    @Html.Partial("_Footer")
 </body>
 <script type="text/javascript">
     $("#home").addClass("current");
 </script>
-<script src="@Url.Content("~/Scripts/contact.js")" type="text/javascript"></script>
+@*<script src="@Url.Content("~/Scripts/contact.js")" type="text/javascript"></script>*@
+<script src="@Url.Content("~/Scripts/popup.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    button_clicked = function () {
+        var t, st, tta;
+        t = document.getElementById('title');
+        t.innerHTML = "Thanks!";
+        t.className = "title used";
+        st = document.getElementById('subtitle');
+        st.innerHTML = "We really appreciate your support!";
+        st.className = "subtitle used";
+        tta = document.getElementById('tweet_to_action');
+        tta.className = "tweet_to_action used";
+        tta.onclick = "";
+        var email = $("#register").val();
+        var url = "Blog/Registered/" + email + "/true";
+        $.post(url, function (data) {
+            if (data) {
+                window.location.href = "Blog/Registered";
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    $('#nothanks').click(function (e) {
+        e.preventDefault();
+        var email = $("#register").val();
+        var url = "Blog/Registered/" + email + "/false";
+        $.post(url, function (data) {
+            if (data) {
+                window.location.href = "Blog/Registered";
+            }
+        });
+    });
+</script>

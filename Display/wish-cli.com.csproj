@@ -171,6 +171,7 @@
     <Content Include="Content\images\tabs-panes-cropped.PNG" />
     <Content Include="Content\images\tabs-panes.jpg" />
     <Content Include="Content\images\tabs-panes.PNG" />
+    <Content Include="Content\images\willet_bird_50.png" />
     <Content Include="Content\style.css" />
     <Content Include="Content\style1.css" />
     <Content Include="Content\style2.css" />
@@ -202,6 +203,7 @@
     <Content Include="Content\themes\base\jquery.ui.slider.css" />
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\Willet.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\contact.js" />
     <Content Include="Scripts\custom.js" />
@@ -217,6 +219,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
+    <Content Include="Scripts\popup.js" />
     <Content Include="Scripts\PrettyPhoto\css\prettyPhoto.css" />
     <Content Include="Scripts\PrettyPhoto\images\PrettyPhoto\dark_rounded\btnNext.png" />
     <Content Include="Scripts\PrettyPhoto\images\PrettyPhoto\dark_rounded\btnPrevious.png" />

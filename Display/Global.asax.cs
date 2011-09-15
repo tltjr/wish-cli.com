@@ -34,6 +34,11 @@ namespace Display
                 new {controller = "Blog", action = "Rss"});
 
             routes.MapRoute(
+                "Register",
+                "Blog/Registered/{email}/{tweeter}",
+                new {controller = "Blog", action = "Registered"});
+
+            routes.MapRoute(
                 "Post",
                 "Blog/{year}/{month}/{slug}",
                 new {controller = "Blog", action = "Single" });

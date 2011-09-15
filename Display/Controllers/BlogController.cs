@@ -43,6 +43,19 @@ namespace Display.Controllers
             return View(blogModel);
         }
 
+        [HttpPost]
+        public bool Registered(string email, string tweeter)
+        {
+            if(!String.IsNullOrEmpty(email))
+            {
+                var repository = new EmailRepository();
+                var model = new EmailModel() {Email = email, Tweeter = tweeter};
+                repository.Store(model);
+                return true;
+            }
+            return false;
+        }
+
         [Authorize]
         public ActionResult New()
         {
