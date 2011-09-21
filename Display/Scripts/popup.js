@@ -2,18 +2,25 @@ $('#contact-submit').click(function (e) {
     e.preventDefault();
     $('.help-inline').hide();
     $('#boxes').removeClass('hidden');
+
     var hasError = false;
-    //    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-    //    var email = $("#Email").val();
-    //    if (email == '') {
-    //        $('#Email').after('<span class="error">Enter a valid email address.</span>');
-    //        hasError = true;
-    //    }
-    //    else if (!emailReg.test(email)) {
-    //        $('#Email').after('<span class="error">Enter a valid email address.</span>');
-    //        hasError = true;
-    //    }
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    var email = $('#register').val();
+    if (email == '') {
+        $('.input').addClass('error');
+        $('.help-inline').html('Email is Required');
+        $('.help-inline').show();
+        hasError = true;
+    }
+    else if (!emailReg.test(email)) {
+        $('.input').addClass('error');
+        $('.help-inline').html('Invalid Email');
+        $('.help-inline').show();
+        hasError = true;
+    }
     if (!hasError) {
+
+        $('.input').removeClass('error');
 
         var id = '#dialog';
 
@@ -29,9 +36,10 @@ $('#contact-submit').click(function (e) {
         $('#mask').fadeTo("slow", 0.8);
 
         var height = $(window).height();
-        var width = $(window).width();
+        var width = $('#top').width();
 
-        var top = height / 2 - $(id).height() / 2;
+        var scrollOffset = $(window).scrollTop();
+        var top = height / 2 - ($(id).height() / 2) + scrollOffset;
         var left = width / 2 - $(id).width() / 2;
 
         //Set the popup window to center

@@ -694,20 +694,16 @@ top:0;
 left:0;
 }
 
-
 #top .ie6_lightbox, #footerwrap .ie6_lightbox{
 position: relative;
 border:none;
 }
+
 /*CONTACT FORM*/	
-
-
 
 #searchsubmit, #send, #top #submit{
 cursor:pointer;
 }
-
-
 
 .text_input, .text_area{
 padding:4px;
@@ -740,6 +736,7 @@ overflow:hidden;
 fieldset label{
 padding-left:7px;
 }
+
 .blocklabel{
 display:block;
 padding:10px 0 0 0;
@@ -750,15 +747,12 @@ width:600px;
 }
 
 /*CONTACT FORM*/	
+
 #send, #top #submit{
 cursor:pointer;
-
 }
 
-
-
 /*comments*/
-
 
 .commentlist{
 margin-bottom:20px;
@@ -892,6 +886,7 @@ float:right;
 }
 
 /* new contact */
+
 #contact-form {
     min-height: 700px;
 }
