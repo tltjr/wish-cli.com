@@ -30,5 +30,6 @@ namespace Display.Controllers
         {
             return View(_sidebarHelper.GetSidebarModel());
         }
+
     }
 }

@@ -306,6 +306,9 @@
     <Content Include="Views\Blog\_Entry.cshtml" />
     <Content Include="Views\Preview\Screenshots.cshtml" />
     <Content Include="Views\Preview\Videos.cshtml" />
+    <Content Include="Views\Blog\_Wrapper.cshtml" />
+    <Content Include="Views\Preview\_Wrapper.cshtml" />
+    <Content Include="Views\Preview\Error.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

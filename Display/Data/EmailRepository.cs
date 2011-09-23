@@ -1,4 +1,5 @@
-﻿using Display.Models;
+﻿using System;
+using Display.Models;
 using MongoDB.Driver;
 
 namespace Display.Data
@@ -16,7 +17,14 @@ namespace Display.Data
 
         public void Store(EmailModel entity)
         {
-            _collection.Insert(entity);
+            try
+            {
+                _collection.Insert(entity);
+            }
+            catch (Exception e)
+            {
+                throw new Exception();
+            }
             //var settings = MCAPISettings.ListAPISettings().ToList();
             //var parms = new listSubscribeParms
             //                {

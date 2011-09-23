@@ -5,16 +5,18 @@
                 Latest News</h4>
             <ul>
                 @{
-                    
-                    var postRepository = new Display.Data.PostRepository();
-                    var posts = postRepository.FindAll().ToList();
-                    posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
-                    var latest = posts.Take(5);
-                        
-                    foreach (var post in latest)
-                    {
-                        <li>@Html.ActionLink(post.Title, post.Url)</li>
-                    }
+                    try {
+                        var postRepository = new Display.Data.PostRepository();
+                        var posts = postRepository.FindAll().ToList();
+                        posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
+                        var latest = posts.Take(5);
+                            
+                        foreach (var post in latest)
+                        {
+                            <li>@Html.ActionLink(post.Title, post.Url)</li>
+                        }
+                        }
+                    catch(Exception e){}
                 }
             </ul>
         </div>

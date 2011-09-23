@@ -31,21 +31,38 @@ namespace Display.Data
                                LastLoginDate = DateTime.Now
                            };
 
-            _collection.Insert(user);
+            try
+            {
+                _collection.Insert(user);
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
             return GetUser(username);
         }
 
         public string GetUserNameByEmail(string email)
         {
             var query = Query.EQ("Email", email);
-            var result = _collection.FindOne(query);
+            User result = null;
+            try
+            {
+                result = _collection.FindOne(query);
+            }
+            catch (Exception e) { }
             return result != null ? result.UserName : String.Empty;
         }
 
         public MembershipUser GetUser(string username)
         {
             var query = Query.EQ("UserName", username);
-            var user = _collection.FindOne(query);
+            User user = null;
+            try
+            {
+                user = _collection.FindOne(query);
+            }
+            catch (Exception e) { }
             if (null == user) return null;
             return new MembershipUser("CustomMembershipProvider",
                                                       user.UserName,
@@ -65,7 +82,15 @@ namespace Display.Data
         public bool ValidateUser(string username, string password)
         {
             var query = Query.EQ("UserName", username);
-            var user = _collection.FindOne(query);
+            User user;
+            try
+            {
+                user = _collection.FindOne(query);
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
             return null != user && BCrypt.CheckPassword(password, BCrypt.HashPassword(password, BCrypt.GenerateSalt()));
         }
     }

@@ -19,7 +19,14 @@ namespace Display.Controllers
 
         public ActionResult Index()
         {
-            var posts = _postRepository.FindAll().ToList();
+            List<Post> posts;
+            try
+            {
+                posts = _postRepository.FindAll().ToList();
+            }
+            catch(Exception e){
+                return RedirectToAction("Error", "Preview", new { errorType = "Database" });
+            }
             posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
             var sidebar = _sidebarHelper.GetSidebarModel();
             var blogModel = new BlogModel()
@@ -32,7 +39,14 @@ namespace Display.Controllers
 
         public ActionResult Registered()
         {
-            var posts = _postRepository.FindAll().ToList();
+            List<Post> posts;
+            try
+            {
+                posts = _postRepository.FindAll().ToList();
+            }
+            catch(Exception e){
+                return RedirectToAction("Error", "Preview", new { errorType = "Database" });
+            }
             posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
             var sidebar = _sidebarHelper.GetSidebarModel();
             var blogModel = new BlogModel()
@@ -46,12 +60,18 @@ namespace Display.Controllers
         [HttpPost]
         public bool Registered(string email, string tweeter)
         {
-            if(!String.IsNullOrEmpty(email))
+            if (!String.IsNullOrEmpty(email))
             {
                 var repository = new EmailRepository();
-                var model = new EmailModel() {Email = email, Tweeter = tweeter};
-                repository.Store(model);
-                return true;
+                var model = new EmailModel() { Email = email, Tweeter = tweeter };
+                try
+                {
+                    repository.Store(model);
+                    return true;
+                }
+                catch (Exception e) {
+                    //potentially stash emails in memory until db is back up. Don't want to lose them!
+                }
             }
             return false;
         }
@@ -91,7 +111,14 @@ namespace Display.Controllers
 
         public ActionResult Single(string slug)
         {
-            var post = _postRepository.FindOneByKey("Slug", slug);
+            Post post;
+            try
+            {
+                post = _postRepository.FindOneByKey("Slug", slug);
+            }
+            catch(Exception e){
+                return RedirectToAction("Error", "Preview", new { errorType = "Database" });
+            }
             var sidebar = _sidebarHelper.GetSidebarModel();
             var singlePostModel = new SinglePostModel()
                                       {
@@ -110,13 +137,19 @@ namespace Display.Controllers
 
         public ActionResult Tag(string tag)
         {
-            var tagged = new TaggedModel
-                             {
-                                 Posts = _postRepository.FindAllByKey("Tags", tag),
-                                 Tag = tag,
-                                 Sidebar = _sidebarHelper.GetSidebarModel()
-                             };
-            return View(tagged);
+            try
+            {
+                var tagged = new TaggedModel
+                                 {
+                                     Posts = _postRepository.FindAllByKey("Tags", tag),
+                                     Tag = tag,
+                                     Sidebar = _sidebarHelper.GetSidebarModel()
+                                 };
+                return View(tagged);
+            }
+            catch(Exception e) {
+                return RedirectToAction("Error", "Preview", new { errorType = "Database" });
+            }
         }
 
         public ActionResult Edit(string objectId)

@@ -7,27 +7,8 @@
 
 <!-- duplicated in Registered, extract to partial -->
 <body id='subpage'>
-    <div class='wrapper'>
-        <div id="top">
-            @Html.Partial("_Head")
-            <div id="main">
-                @Html.Partial("_Sidebar", Model.Sidebar)
-                <div id="content">
-                    @Html.Partial("_Summaries", Model.Posts)
-                    <div class="pagination">
-                        <span class="current">1</span> <a class="inactive" href="#">2</a> <a class="inactive"
-                            href="#">3</a> <a class="inactive" href="#">4</a> <a class="inactive" href="#">5</a>
-                    </div>
-                </div>
-                <!-- end content -->
-            </div>
-            <!--end main-->
-        </div>
-        <!-- end #top -->
-
-    </div><!-- end #wrapper -->
-
-@Html.Partial("_Footer")
+    @Html.Partial("_Wrapper", Model)
+    @Html.Partial("_Footer")
 </body>
 <script type="text/javascript">
     $("#blog").addClass("current");

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Display.Models;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -21,14 +22,28 @@ namespace Display.Data
         {
             if (null == key || null == value) return null;
             var query = Query.EQ(key, value);
-            return _collection.FindOne(query);
+            try
+            {
+                return _collection.FindOne(query);
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
         }
 
         public IEnumerable<Post> FindAllByKey(string key, string value)
         {
             if (null == key || null == value) return null;
             var query = Query.EQ(key, value);
-            return _collection.Find(query);
+            try
+            {
+                return _collection.Find(query);
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
         }
 
         public IEnumerable<Post> FindAll()
@@ -38,7 +53,13 @@ namespace Display.Data
 
         public void Store(Post entity)
         {
-            _collection.Insert(entity);
+            try
+            {
+                _collection.Insert(entity);
+            }
+            catch (Exception e)
+            {
+            }
         }
 
         public void Update(Post updated)
@@ -50,7 +71,13 @@ namespace Display.Data
         public void DeleteById(ObjectId id)
         {
             var query = Query.EQ("_id", id);
-            _collection.Remove(query);
+            try
+            {
+                _collection.Remove(query);
+            }
+            catch (Exception e)
+            {
+            }
         }
 
 
@@ -58,22 +85,36 @@ namespace Display.Data
         {
             if (null == objectId) return null;
             var query = Query.EQ("_id", new BsonObjectId(objectId));
-            return _collection.FindOne(query);
+            try
+            {
+                return _collection.FindOne(query);
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
         }
 
         public IEnumerable<string> FindTags()
         {
             var result = new List<string>();
-            foreach (var post in _collection.FindAll())
+            try
             {
-                var tags = post.Tags;
-                foreach (var tag in tags)
+                foreach (var post in _collection.FindAll())
                 {
-                    if(!result.Contains(tag))
+                    var tags = post.Tags;
+                    foreach (var tag in tags)
                     {
-                        result.Add(tag);
+                        if (!result.Contains(tag))
+                        {
+                            result.Add(tag);
+                        }
                     }
                 }
+            }
+            catch (Exception e)
+            {
+                return null;
             }
             return result;
         }

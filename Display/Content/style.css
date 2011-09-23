@@ -1195,7 +1195,7 @@ form label.error {
     display: none;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 
 #inner
@@ -1203,6 +1203,15 @@ form label.error {
     color: black;
     background: #DFF1DF;
     border: 3px solid #BBE2BB;
+    border-bottom-width: 0px;
+    padding: 20px 20px 75px 20px;
+}
+
+#inner-error
+{
+    color: black;
+    background: #FAE5E3;
+    border: 3px solid #9D261D;
     border-bottom-width: 0px;
     padding: 20px 20px 75px 20px;
 }
