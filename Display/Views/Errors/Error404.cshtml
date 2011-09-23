@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*/Home/PageFull*@
+<body id='subpage' class='fullwidth'>
+    <div class='wrapper'>
+        <div id="top">
+            @Html.Partial("_Head")
+            <div id="main">
+                <div id="content">
+                    <div class='entry'>
+                        <h2>Unfortunately, the page you are trying to reach does not exist.</h2>
+                        <p>Please accept our apologies and try one of the pages below.</p>
+                        <h3>Most Popular Pages</h3>
+                        @Html.ActionLink("Wish Blog", "Index", "Blog", null, null)
+                        <!--end entry-->
+                    </div>
+                </div>
+                <!-- end content -->
+            </div>
+            <!--end main-->
+        </div>
+        <!-- end #top -->
+    </div>
+    <!-- end #wrapper -->
+    @Html.Partial("_Footer")
+</body>

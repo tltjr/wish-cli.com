@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
 using System.ServiceModel.Syndication;
 using System.Web.Mvc;
@@ -188,14 +187,20 @@ namespace Display.Controllers
 
         public ActionResult Rss()
         {
-            var posts = _postRepository.FindAll().ToList();
-            posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
-            var twenty = posts.Take(20);
-            var feed = new SyndicationFeed("Wish Blog",
-                "News about the ultimate command line interface for Windows, Wish!", 
-                new Uri(@"http://wish-cli.com/Feed"),
-                _rssHelper.CreateSyndicationItems(twenty));
-            return new RssActionResult { Feed = feed };
+            try
+            {
+                var posts = _postRepository.FindAll().ToList();
+                posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
+                var twenty = posts.Take(20);
+                var feed = new SyndicationFeed("Wish Blog",
+                    "News about the ultimate command line interface for Windows, Wish!",
+                    new Uri(@"http://wish-cli.com/Feed"),
+                    _rssHelper.CreateSyndicationItems(twenty));
+                return new RssActionResult { Feed = feed };
+            }
+            catch (Exception e) {
+                return null;
+            }
         }
     }
 }
