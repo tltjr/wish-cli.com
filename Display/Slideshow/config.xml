@@ -40,12 +40,12 @@
 		<!-- changing transition beetween first & second slide -->
         <transition num="3" slicing="vertical" direction="down" />
         <slide>
-       		<url>Content/images/tab-complete.PNG</url>
+       		<url>Content/images/large-tc.PNG</url>
         </slide>		
 		<!-- changing transition beetween second & third slide -->
         <transition num="4" direction="right" shader="flat" />
 		<slide>
-            <url>Content/images/tabs-panes-cropped.PNG</url>
+            <url>Content/images/tabs-panes.PNG</url>
         </slide>
         <!-- transitions properties defined in transitions template -->
 		<slide>

@@ -36,15 +36,15 @@
             <h4>
                 Miscellaneous</h4>
             <ul>
-                <li><a href="@Url.Action("Page", "Home")">Register</a></li>
+@*                <li><a href="@Url.Action("Page", "Home")">Register</a></li>
                 <li><a href="@Url.Action("Page", "Home")">Log in</a></li>
-                <li><a href="@Url.Action("Page", "Home")">Terms of Service</a></li>
-                <li><a href="Home/Contact">Contact</a></li>
+                <li><a href="@Url.Action("Page", "Home")">Terms of Service</a></li>*@
+                <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
                 <li><a href="@Url.Action("Page", "Home")">Site Map</a></li>
             </ul>
         </div>
         <div class="box box_custom_footer">
-            <a href='Home/Contact' class='custom_button ie6fix rounded'><strong>Contact Form</strong><span>get
+            <a href="@Url.Action("Page", "Home")" class='custom_button ie6fix rounded'><strong>Contact Form</strong><span>get
                 in touch with us</span></a>
             <div id='sitesearch_footer'>
                 <h4>
