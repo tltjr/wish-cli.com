@@ -13,6 +13,29 @@
                         <p>Please accept our apologies and try one of the pages below.</p>
                         <h3>Most Popular Pages</h3>
                         @Html.ActionLink("Wish Blog", "Index", "Blog", null, null)
+                        <br />
+                        @Html.ActionLink("Preview", "Preview", "Preview", null, null)
+                        <br />
+                        @Html.ActionLink("Screenshots", "Screenshots", "Preview", null, null)
+                        <br />
+                        @Html.ActionLink("Videos", "Videos", "Preview", null, null)
+                        <br />
+                        <h3>Latest News</h3>
+                        @{
+                            try {
+                                var postRepository = new Display.Data.PostRepository();
+                                var posts = postRepository.FindAll().ToList();
+                                posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
+                                var latest = posts.Take(5);
+                                    
+                                foreach (var post in latest)
+                                {
+                                    @Html.ActionLink(post.Title, post.Url)
+                                    <br />
+                                }
+                            }
+                            catch(Exception e){}
+                        }
                         <!--end entry-->
                     </div>
                 </div>
